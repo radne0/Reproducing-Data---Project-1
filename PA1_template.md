@@ -21,7 +21,7 @@ contains headers. Within the dataset there are 17568 observations, each spanning
 
 * ***interval***: numeric/integer.  Identifies which 5 minute interval the data was measured. 288 unique values ranging from 0 to 2355.
 
-### Loading the dataset.###
+### Loading the dataset.
 
 With the file format and data types determined, we begin importing the data.
 
