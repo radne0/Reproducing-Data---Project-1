@@ -112,7 +112,7 @@ text(1800,five_min_max-50, paste0("(",as.character(max_int),",",as.character(rou
 axis(1,at=seq(0,2400,300))
 ```
 
-![](PA1_template_files/figure-html/time series-1.png)<!-- -->
+![](PA1_template_files/figure-html/time_series-1.png)<!-- -->
 
 
 ### A look at the missing data from our dataset.
@@ -218,7 +218,7 @@ daily_steps_noNA<- tapply(act_data_noNA$steps,act_data_noNA$date,sum,na.rm=TRUE)
 hist(daily_steps_noNA,col="blue",main="Daily step distribution",xlab ="steps")
 ```
 
-![](PA1_template_files/figure-html/histogram with no NA-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram_with_no_NA-1.png)<!-- -->
 
 We again compute the mean and the median
 
@@ -264,7 +264,7 @@ hist(daily_steps,col="blue",main="With NA values",ylim=c(0,40),xlab="steps")
 hist(daily_steps_noNA,col="blue",main="Without NA values",ylim=c(0,40),xlab="steps")
 ```
 
-![](PA1_template_files/figure-html/histogram with and without NA-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram_with_and_without_NA-1.png)<!-- -->
 
 This demonstrates the impact of the NA values on the distribution.  With replacement, we see a drop in frequency on the lower end due the 8 days that had no data now having data based on the interval averages.  This drives an overall increase in the mean and the median of our data and results in a distribution that is more centrally distributed.  In particular, we observe a 15.09%
 increase in the mean and a 3.57% increase in the median
@@ -316,14 +316,6 @@ act_data_noNA %>%
 ## `.groups` argument.
 ```
 
-![](PA1_template_files/figure-html/weekend vs weekday-1.png)<!-- -->
-
-
-
-
-
-
-
-
+![](PA1_template_files/figure-html/weekend_vs_weekday-1.png)<!-- -->
 
 
