@@ -158,6 +158,8 @@ act_data_noNA %>%
         ylab("Mean number of steps") + 
         theme(legend.position="none")
 ```
+which indicates an increase in activity during the day during weekends.
+
 
 ```{r echo=FALSE}
 #weekday_data <- subset(act_data_noNA, day_type == "weekday"   ) 

@@ -317,5 +317,7 @@ act_data_noNA %>%
 ```
 
 ![](PA1_template_files/figure-html/weekend_vs_weekday-1.png)<!-- -->
+which indicates an increase in activity during the day during weekends.
+
 
 
